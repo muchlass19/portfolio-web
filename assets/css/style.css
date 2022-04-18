@@ -1,0 +1,245 @@
+:root{
+    /* COLOR */
+    --main-color: #1A1A2E;
+    --blue-color: #2671CB;
+    --white-color: #F5F5F5;
+
+    /* FONT WEIGHT */
+    --weight-normal: 500;
+    --weight-bold: 700;
+    --weight-light: 300;
+
+    /* FONT SIZE */
+    --font-normal: 16px;
+    --font-title: 20px;
+    --font-heading: 48px;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: var(--font-normal);
+}
+
+.bg-white {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+.title {
+    font-weight: var(--weight-bold);
+    font-size: var(--font-title);
+}
+
+/* CURVED */
+.curved {
+    transform: skew(0deg, -6deg) translateY(100px);
+    background-color: var(--main-color);
+    min-height: 100px;
+    padding: 100px 0;
+}
+
+.curved .container {
+    transform: skew(0deg, 6deg);
+}
+/* END CURVED */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--white-color) !important;
+}
+
+.navbar-brand {
+    font-weight: var(--weight-bold);
+    font-size: var(--font-title);
+}
+
+.nav-link {
+    font-weight: var(--weight-light);
+    font-size: var(--font-normal);
+}
+
+.nav-active {
+    font-weight: var(--weight-bold);
+}
+/* END NAVBAR */
+
+/* HERO */
+#hero {
+    min-height: 90vh;
+    width: 100%;
+}
+
+#hero h1 {
+    font-size: var(--font-heading);
+    font-weight: var(--weight-bold);
+    line-height: 1.4em;
+}
+
+#hero p {
+    letter-spacing: .5em;
+    font-weight: var(--weight-light);
+}
+
+#hero img {
+    max-width: 360px;
+    margin-top: 1em;
+}
+
+.btn-custom {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    padding: .8em 3.5em;
+    transition: 300ms;
+    font-size: 1.2em;
+}
+
+.btn-custom:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+/* END HERO */
+
+/* ABOUT */
+#about {
+    min-height: 300px;
+    width: 100%;
+}
+
+#about h1 {
+    font-weight: var(--weight-bold);
+}
+
+.about-wrapper {
+    min-height: 300px;
+}
+
+.third-color {
+    color: var(--blue-color);
+    font-weight: var(--weight-bold);
+}
+/* END ABOUT */
+
+/* PORTFOLIO */
+#portfolio {
+    min-height: 300px;
+    width: 100%;
+}
+
+.portfolio-nav li {
+    display: inline-block;
+}
+
+.portfolio-nav li:not(:last-child)::after {
+    content: '|';
+    margin: 0 1em;
+}
+
+.portfolio-nav li a {
+    color: var(--white-color);
+}
+
+.card {
+    background: transparent;
+    border: 1px solid var(--white-color);
+}
+/* END PORTFOLIO */
+
+/* PRODUCT */
+#product {
+    min-height: 300px;
+    width: 100%;
+}
+
+.product-wrapper {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 100px;
+    height: 24em;
+    margin: 3.6em 0;
+}
+
+.body-content p {
+    font-size: var(--font-normal);
+}
+
+.btn-custom-dark {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    padding: .8em 3.5em;
+    transition: 300ms;
+    font-size: 1.2em;
+}
+
+.btn-custom-dark:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+/* END PRODUCT */
+
+/* FOOTER */
+#footer {
+    min-height: 300px;
+    width: 100%;
+}
+
+.info-wrapper h1 {
+    font-size: var(--font-heading);
+}
+
+.info-wrapper h3 {
+    font-weight: var(--weight-light);
+    line-height: 1.4em;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 3em;
+    line-height: 3em;
+}
+
+.footer-info a {
+    color: var(--white-color);
+    font-size: var(--font-normal);
+    font-weight: var(--weight-light);
+}
+
+.footer-info a span {
+    font-weight: var(--weight-bold);
+}
+
+.footer-info a span::after {
+    content: 'abc';
+    color: transparent;
+}
+/* END FOOTER */
+
+/* SCREEN SIZE */
+@media screen and (min-width: 992px){
+    :root {
+        /* FONT SIZE */
+        --font-normal: 18px;
+        --font-title: 36px;
+        --font-heading: 64px;
+    }
+    .custom-border-bottom {
+        color: var(--white-color);
+        border-bottom: 1px solid var(--white-color);
+    }
+}
