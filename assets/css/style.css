@@ -93,6 +93,7 @@ ul {
 #hero p {
     letter-spacing: .5em;
     font-weight: var(--weight-light);
+    line-height: 2.2em;
 }
 
 #hero img {
